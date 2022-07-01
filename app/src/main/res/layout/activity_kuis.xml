@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".kuis"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/soals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="soal"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/no1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="5"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                />
+            <TextView
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="13dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                tools:text="0/5"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pil1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="A"/>
+
+        <TextView
+            android:id="@+id/pil2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="B"/>
+
+        <TextView
+            android:id="@+id/pil3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="C"/>
+
+        <TextView
+            android:id="@+id/pil4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="13dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:text="D"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:padding="13dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Selanjutnya"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
